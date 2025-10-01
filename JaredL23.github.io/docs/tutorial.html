@@ -1,0 +1,16 @@
+
+  <!doctype html>
+  <html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tutorial: First API Call</title><style>body{font-family:system-ui,Segoe UI,Roboto,sans-serif;margin:2rem;max-width:860px;line-height:1.6}code,pre{background:#f1f5f9;padding:.2rem .4rem;border-radius:6px}</style></head>
+  <body>
+  <h1>Tutorial: First API Call</h1>
+  <ol>
+    <li>Start the API (see Getting Started).</li>
+    <li>Create a claim:</li>
+  </ol>
+  <pre><code>curl -X POST http://127.0.0.1:8000/claims \
+-H "Content-Type: application/json" \
+-d '{"member_id":"ABC123", "amount":100.5, "status":"submitted"}'</code></pre>
+  <p>Copy the <code>id</code> and fetch it:</p>
+  <pre><code>curl http://127.0.0.1:8000/claims/{id}</code></pre>
+  </body></html>

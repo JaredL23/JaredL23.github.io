@@ -1,0 +1,78 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Jared Lafferty • Software Engineer Portfolio</title>
+  <style>
+    :root { --pad: 1rem; --radius: 16px; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin:0; background:#0f172a; color:#e2e8f0;}
+    header { padding: 3rem 1rem; text-align:center; background: linear-gradient(180deg,#111827,#0f172a);}
+    h1 { margin:0 0 .5rem; font-size: clamp(2rem, 3vw, 3rem); }
+    p.lead { color:#93c5fd; margin:0; }
+    main { max-width:1200px; margin:0 auto; padding:2rem 1rem; }
+    .grid { display:grid; gap:1.25rem; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+    .card { background:#111827; border:1px solid #1f2937; padding: var(--pad); border-radius: var(--radius); }
+    .card h3 { margin-top:0; color:#93c5fd;}
+    a.btn { display:inline-block; margin-top:.5rem; padding:.5rem .75rem; border-radius:10px; border:1px solid #2563eb; color:#bfdbfe; text-decoration:none;}
+    footer { text-align:center; padding:2rem; color:#94a3b8;}
+    .tag { font-size:.8rem; background:#0ea5e9; color:#082f49; border-radius:999px; padding:.15rem .5rem; margin-right:.25rem;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jared Lafferty</h1>
+    <p class="lead">Software Engineer • APIs • Automation • Docs-as-Code</p>
+  </header>
+  <main>
+    <section>
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Claims Processing API</h3>
+          <p>FastAPI service with OpenAPI docs, tests, and Docker.</p>
+          <div>
+            <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Docker</span>
+          </div>
+          <a class="btn" href="https://github.com/your-username/claims-api-fastapi">View Repo</a>
+        </div>
+        <div class="card">
+          <h3>OpenAPI Spec & ADRs</h3>
+          <p>Contract-first design with a lightweight architecture record.</p>
+          <div>
+            <span class="tag">OpenAPI</span><span class="tag">ADR</span>
+          </div>
+          <a class="btn" href="https://github.com/your-username/openapi-spec-and-adr">View Repo</a>
+        </div>
+        <div class="card">
+          <h3>Doc Workflow Automation</h3>
+          <p>Python pipeline simulating metadata versioning and releases.</p>
+          <div>
+            <span class="tag">Python</span><span class="tag">Automation</span>
+          </div>
+          <a class="btn" href="https://github.com/your-username/doc-workflow-automation">View Repo</a>
+        </div>
+        <div class="card">
+          <h3>Expense Tracker API</h3>
+          <p>Node.js/Express API for personal expenses, with Node CI.</p>
+          <div>
+            <span class="tag">Node</span><span class="tag">Express</span>
+          </div>
+          <a class="btn" href="https://github.com/your-username/expense-tracker-node">View Repo</a>
+        </div>
+        <div class="card">
+          <h3>Developer Docs Sample</h3>
+          <p>Getting Started, Tutorial, and FAQ written like a real product.</p>
+          <div>
+            <span class="tag">Docs</span><span class="tag">DX</span>
+          </div>
+          <a class="btn" href="./docs/index.html">View Docs</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>© <span id="y"></span> Jared Lafferty</footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
